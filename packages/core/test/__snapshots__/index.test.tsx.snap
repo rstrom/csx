@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Styling a Button component works 1`] = `
+.emotion-0 {
+  color: red;
+  color: green;
+}
+
+<button
+  bar={false}
+  className="emotion-0"
+  foo={true}
+/>
+`;
