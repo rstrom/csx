@@ -2,8 +2,8 @@
   "name": "root",
   "private": true,
   "workspaces": [
-    "packages/build",
-    "packages/core"
+    "packages/*",
+    "examples/*"
   ],
   "devDependencies": {
     "husky": ">=1",
