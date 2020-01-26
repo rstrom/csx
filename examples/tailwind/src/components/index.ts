@@ -4,16 +4,20 @@ import { tokens } from "./tokens.csx";
 import { inset, outset } from "./effects";
 
 export const Stack = csx(
-  css`
-    display: flex;
-  `,
+  [
+    css`
+      display: flex;
+    `
+  ],
   tokens
 );
 
 export const Header = csx(
-  css`
-    text-decoration: wavy underline lime;
-  `,
+  [
+    css`
+      text-decoration: wavy underline lime;
+    `
+  ],
   tokens,
   "h1"
 );
