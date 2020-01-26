@@ -36,5 +36,6 @@
     "postcss": "^7.0.26",
     "postcss-js": "^2.0.3",
     "rollup-plugin-replace": "^2.2.0"
-  }
+  },
+  "gitHead": "518a4c404c151d70e856abde4c40ad81676d5f97"
 }

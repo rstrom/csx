@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
-    "@csx/core": "./packages/core",
+    "@csx/core": "../../packages/core",
     "@emotion/core": "^10.0.27",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -40,7 +40,7 @@
     ]
   },
   "devDependencies": {
-    "@csx/build": "./packages/build",
+    "@csx/build": "../../packages/build",
     "tailwindcss": "^1.1.4"
   }
 }

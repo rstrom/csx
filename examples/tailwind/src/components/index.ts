@@ -1,6 +1,7 @@
 import { csx } from "@csx/core";
 import { css } from "@emotion/core";
 import { tokens } from "./tokens.csx";
+import { inset, outset } from "./effects";
 
 export const Stack = csx(
   css`
@@ -18,19 +19,45 @@ export const Header = csx(
 );
 
 export const Button = csx(
-  css`
-    background: red;
-  `,
+  [
+    css`
+      font-weight: bold;
+      outline: none;
+      border: none;
+      padding: 0.5rem;
+      border-radius: 0.5rem;
+      color: black;
+      background: #eeeeff;
+      cursor: pointer;
+    `,
+    outset
+  ],
   tokens,
   "button"
 );
 
 export const Code = csx(
-  css`
-    color: white;
-    background: black;
-    padding: 0.25rem;
-  `,
+  [
+    css`
+      color: white;
+      background: rgba(0, 0, 0, 0.8);
+      padding: 0.5rem 1rem;
+      border-radius: 0.125rem;
+    `,
+    inset
+  ],
   tokens,
   "code"
+);
+
+export const Card = csx(
+  [
+    css`
+      background: #efeeff;
+      padding: 1rem;
+      border-radius: 1rem;
+    `,
+    outset
+  ],
+  tokens
 );
